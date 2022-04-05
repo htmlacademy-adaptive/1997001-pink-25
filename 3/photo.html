@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <base href="https://htmlacademy-adaptive.github.io/1997001-pink-25/3/">
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="">
+      <img class="logo" src="img/pink-header.svg" width="74" height="23" alt="логотип Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" href="#">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="main-title">
+      <h1 class="visually-hidden">Каталог фотографий</h1>
+      <h2 class="main-title__title-photo">Фотографии пользователей</h2>
+    </section>
+    <section class="product-cards">
+      <div class="product-cards__panorama-page">
+        <p class="product-cards__text-info">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+          хватает ваших?</p>
+        <img class="product-cards__image" src="img/catalog/panorama-desktop.jpg" width="1200" height="506"
+          alt="Панорама дня">
+        <div class="product-cards__user-comment">
+          <div class="container">
+            <b class="user-name">Анна<span class="user-time-of-action">(5 минут назад)</span></b>
+          </div>
+          <div class="container-favorit">
+            <span class="favorit">нрвится: 215</span>
+            <button class="favorit-button" type="button"></button>
+          </div>
+          <p class="product-cards__user-comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите
+            прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        </div>
+      </div>
+      <ul class="product-cards__list-cards">
+        <li class="product-cards__item-cards">
+          <img class="images-cards" src="img/catalog/user-commnets/photo-1-desktop.jpg" width="300"
+            height="400" alt="фотография автомобиля">
+          <b class="user-name">Левон<span class="user-time-of-action">(5 часов назад)</span></b>
+          <p class="user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <span class="favorit">нравится: 356</span>
+          <button class="favorit-button" type="button"></button>
+        </li>
+        <li class="product-cards__item-cards">
+          <img class="images-cards" src="img/catalog/user-commnets/photo-2-desktop.jpg" width="300"
+            height="400" alt="фотография с барабанами">
+          <b class="user-name">Антон<span class="user-time-of-action">(12 часов назад)</span></b>
+          <p class="user-comment">Соседи будут рады!</p>
+          <span class="favorit">нравится: 666</span>
+          <button class="favorit-button" type="button"></button>
+        </li>
+        <li class="product-cards__item-cards">
+          <img class="images-cards" src="img/catalog/user-commnets/photo-3-desktop.jpg" width="300"
+            height="400" alt="небо через крышу">
+          <b class="user-name">Борис<span class="user-time-of-action">(20 часов назад)</span></b>
+          <p class="user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <span class="favorit">нравится: 215</span>
+          <button class="favorit-button" type="button"></button>
+        </li>
+        <li class="product-cards__item-cards">
+          <img class="images-cards" src="img/catalog/user-commnets/photo-4-desktop.jpg" width="300"
+            height="400" alt="фотография кубанская бахча">
+          <b class="user-name">Сергей<span class="user-time-of-action">(20 часов назад)</span></b>
+          <p class="user-comment">Самая кубанская в мире!</p>
+          <span class="favorit">нравится: 4</span>
+          <button class="favorit-button" type="button"></button>
+        </li>
+        <li class="product-cards__item-cards">
+          <img class="images-cards" src="img/catalog/user-commnets/photo-5-desktop.jpg" width="300"
+            height="400" alt="фотография гор">
+          <b class="user-name">Максим<span class="user-time-of-action">(40 часов назад)</span></b>
+          <p class="user-comment">Где снег-то?</p>
+          <span class="favorit">нравится: 150</span>
+          <button class="favorit-button" type="button"></button>
+        </li>
+        <li class="product-cards__item-cards">
+          <img class="images-cards" src="img/catalog/user-commnets/photo-6-desktop.jpg" width="300"
+            height="400" alt="фотография вид из самолета">
+          <b class="user-name">Надежда<span class="user-time-of-action">(45 часов назад)</span></b>
+          <p class="user-comment">Всем GM и взаимные лайки!</p>
+          <span class="favorit">нравится: 2560</span>
+          <button class="favorit-button" type="button"></button>
+        </li>
+      </ul>
+    </section>
+    <section class="upload-photo">
+      <p class="text-upload">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <form class="upload-photo__form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="upload-photo__input-upload" type="file" name="photo" multiple accept="image/*">
+        <fieldset class="upload-photo__slider slider-form">
+          <legend class="slider-form__visually-hidden">Редактор фото</legend>
+          <div class="slider-form__slider-container">
+            <div class="slider-form__range-scale">
+              <button class="price-range-toggle toggle" type="button">
+                <span class="visually-hidden">Изменить обрезку фото</span>
+              </button>
+            </div>
+            <div class="slider-form__range-scale">
+              <button class="price-range-toggle toggle" type="button">
+                <span class="visually-hidden">Наполнить красками</span>
+              </button>
+            </div>
+            <div class="slider-form__range-scale">
+              <button class="price-range-toggle toggle" type="button">
+                <span class="visually-hidden">Изменить контраст</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
+        <button class="button-uploat" type="button">Запостить</button>
+        <button class="button-cancel" type="button">Отмена</button>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo-footer">
+        <a class="logo-link" href="index.html"><span class="visually-hidden">логотип Пинк</span></a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social-link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в контакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social-link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в телеграме</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social-link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в ютубе</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copypyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
