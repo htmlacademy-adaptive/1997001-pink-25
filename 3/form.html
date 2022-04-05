@@ -38,8 +38,8 @@
       <h2 class="page-title__title-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </section>
     <section class="form-container">
-      <h3 class="form-container__title-form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
-        на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+      <p class="form-container__title-form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
+        на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <form class="form-container__form-page" action="https://echo.htmlacademy.ru/" method="post">
         <ul class="form-container__list-page">
           <li class="form-container__item-page">
@@ -49,7 +49,7 @@
                 <li class="input-text__item-form">
                   <label for="input-text__surname-label" class="input-text__label">
                     <span class="user-data">Фамилия</span>
-                    <input id="input-text__surname-label" class="input-text__input" type="text" name="name"
+                    <input id="input-text__surname-label" class="input-text__input" type="text" name="surname"
                       placeholder="Укажите фамилию *" required>
                   </label>
                 </li>
@@ -163,6 +163,10 @@
             </fieldset>
           </li>
         </ul>
+        <div class="form-container__button">
+          <button class="form-container__submit button-fields" type="submit">отправить форму</button>
+          <p class="form-container__required-filds">* — обязательные для заполнения поля</p>
+        </div>
       </form>
     </section>
   </main>
