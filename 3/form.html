@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <base href="https://htmlacademy-adaptive.github.io/1997001-pink-25/3/">
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="">
+      <img class="logo" src="img/pink-header.svg" width="74" height="23" alt="логотип Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="link" href="">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="link" href="">Фотографии</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="link" href="">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class="link" href="">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Конкурс путешевствия Пинк</h1>
+    <section class="page-title">
+      <h2 class="page-title__title-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </section>
+    <section class="form-container">
+      <h3 class="form-container__title-form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
+        на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+      <form class="form-container__form-page" action="https://echo.htmlacademy.ru/" method="post">
+        <ul class="form-container__list-page">
+          <li class="form-container__item-page">
+            <fieldset class="form-container__input input-text">
+              <legend class="visually-hidden">данные пользователя</legend>
+              <ul class="input-text__list-form">
+                <li class="input-text__item-form">
+                  <label for="input-text__surname-label" class="input-text__label">
+                    <span class="user-data">Фамилия</span>
+                    <input id="input-text__surname-label" class="input-text__input" type="text" name="name"
+                      placeholder="Укажите фамилию *" required>
+                  </label>
+                </li>
+                <li class="input-text__list-form">
+                  <label for="input-text__name-label" class="input-text__label">
+                    <span class="user-data">имя</span>
+                    <input id="input-text__name-label" class="input-text__input" type="text" name="name"
+                      placeholder="Введите ваше имя *" required>
+                  </label>
+                </li>
+                <li class="input-text__list-form">
+                  <label for="input-text__patronymic-label" class="input-text_label">
+                    <span class="user-data">отчество</span>
+                    <input id="input-text__patronymic-label" class="input-text__input" type="text" name="patronymic"
+                      placeholder="Ну и отчество тоже">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="form-container__item-page">
+            <fieldset class="form-container__input input-phone">
+              <legend class="applications">С каким приложением путешествовали?</legend>
+              <ul class="input-phone__list-phone">
+                <li class="input-phone__item-phone">
+                  <label class="input-phone__phone-label">
+                    <input class="visually-hidden input-phone__radio-input" type="radio" name="operating-system" value="Pink для iOS"
+                      checked>
+                    <span class="radio-phone">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="input-phone__item-phone">
+                  <label class="phone-label">
+                    <input class="visually-hidden input-phone__radio-input" type="radio" name="operating-system"
+                      value="Pink на Android">
+                    <span class="radio-phone">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="input-phone__item-phone">
+                  <label class="phone-label">
+                    <input class="visually-hidden input-phone__radio-input" type="radio" name="operating-system"
+                      value="Windows Phone">
+                    <span class="radio-phone">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="form-container__item-page">
+            <fieldset class="form-container__input-contacts">
+              <legend class="contacts">контактная информация</legend>
+              <label class="contacts-user">
+                <input class="input-contacts number-phone" type="tel" name="number" placeholder="Номер, пожалуйста">
+                <span class="text-signature">номер телефона</span>
+              </label>
+              <label class="contacts-user">
+                <input class="input-contacts mail" type="email" name="mail" placeholder="Введите почту *">
+                <span class="text-signature">адрес почты</span>
+              </label>
+            </fieldset>
+          </li>
+          <li class="form-container__item-page">
+            <fieldset class="form-container__checkbox checkbox-button">
+              <legend class="checkbox-button">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="checkbox-button__list-button">
+                <li class="checkbox-button__item-checkbox">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-button__input-checkbox" type="checkbox" name="achievements-selfie">
+                    <span class="checkbox-text control-mark">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="checkbox-button__item-checkbox">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-button__input-checkbox" type="checkbox" name="achievements-beach">
+                    <span class="checkbox-text control-mark">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="checkbox-button__item-checkbox">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-button__input-checkbox" type="checkbox" name="achievements-see-noris">
+                    <span class="checkbox-text control-mark">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="checkbox-button__item-checkbox">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-button__input-checkbox" type="checkbox" name="achievement-bought-souvenirs">
+                    <span class="checkbox-text control-mark">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="checkbox-button__item-checkbox">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-button__input-checkbox" type="checkbox" name="achievement-held-the-tower">
+                    <span class="checkbox-text control-mark">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="checkbox-button__item-checkbox">
+                  <label class="control">
+                    <input class="visually-hidden checkbox-button__input-checkbox" type="checkbox" name="achievement-trashed-the-hotel">
+                    <span class="checkbox-text control-mark">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="form-container__item-page">
+            <fieldset class="form-container__select description">
+              <legend class="description-legend">опишите свои эмоции</legend>
+              <label for="text-field-label" class="visually-hidden">поле ввода</label>
+              <textarea id="text-field-label" class="description__text inventory-field" name="description-user"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo-footer">
+        <a class="logo-link" href="index.html"><span class="visually-hidden">логотип Пинк</span></a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social-link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в контакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social-link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в телеграме</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social-link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в ютубе</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copypyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
